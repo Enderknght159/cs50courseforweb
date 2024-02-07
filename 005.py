@@ -1,18 +1,38 @@
 name = "Yaseen"
 print(name[1])
 
-list = ['yaseen', 'Omar', 'Amr', 'Danger']
+List = ['yaseen', 'Omar', 'Amr', 'Danger']
 
-print(list[2])
+print(List[2])
 
-tuple = (2,3,4)
+Tuple = (2, 3, 4)
 
-print(tuple[1])
+print(Tuple[1])
 
-list.append("Lolo")
-print(list[4])
+List.append("Lolo")
+print(List[4])
 
-set = set(2)
-set.add(1)
+Set = set()
+Set.add(1)
+Set.add(-1)
 
-print(set)
+print(Set)
+print(len(Set))
+print(len(List))
+print(len(Tuple))
+
+print('[', end='')
+for a in List:
+    print(a, sep='', end=', ')
+print(']')
+
+
+Dict = {
+    "Abdallah": "Boss",
+    "Yaseen": "Archive",
+    "Omar": "Communication",
+    "Amr": "Photography and Social Media",
+    "Sameh": "Buiscuts"
+}
+for i in Dict:
+    print(i,2*'\t',Dict[i])
